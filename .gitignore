@@ -1,0 +1,43 @@
+### --- 1. 隐私与安全 (最重要的部分) ---
+# 存放 API Keys, 账号密码的环境变量文件
+.env
+auth.json
+secrets.py
+credentials/
+
+### --- 2. Java 相关 (针对你的课程项目) ---
+*.class
+*.jar
+*.war
+*.ear
+
+# 编译出的文件夹
+bin/
+target/
+build/
+out/
+
+### --- 3. Python 相关 (如果你用 Python 抓取数据) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.conda/
+
+### --- 4. 自动交易产生的日志与数据 ---
+# 防止把巨大的历史行情数据或交易日志传上去
+*.log
+data/raw_data/
+logs/
+temp/
+
+### --- 5. 编辑器相关 ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
