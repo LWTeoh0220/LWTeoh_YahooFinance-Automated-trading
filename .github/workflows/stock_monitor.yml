@@ -44,4 +44,5 @@ jobs:
         with:
           name: monitor-logs
           path: logs/
+          if-no-files-found: ignore
           retention-days: 30

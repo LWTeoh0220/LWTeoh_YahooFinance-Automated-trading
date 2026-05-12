@@ -19,6 +19,9 @@ from database import Database
 from line_notifier import LineNotifier
 from stock_monitor import StockMonitor
 
+# Ensure log directory exists in fresh CI runners.
+Path("logs").mkdir(parents=True, exist_ok=True)
+
 # Setup logging
 logging.basicConfig(
     level=logging.INFO,
