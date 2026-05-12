@@ -1,0 +1,27 @@
+{
+  "stocks": [
+    {
+      "symbol": "2330.TW",
+      "name": "台积电",
+      "target_price": 2230,
+      "condition": ">=",
+      "enabled": true
+    },
+    {
+      "symbol": "0050.TW",
+      "name": "元大台灣50",
+      "target_price": 150,
+      "condition": "<=",
+      "enabled": true
+    }
+  ],
+  "settings": {
+    "check_interval_minutes": 15,
+    "notification_cooldown_minutes": 0,
+    "price_fetch_retries": 3,
+    "retry_backoff_seconds": 2.0,
+    "request_delay_seconds": 1.5,
+    "timezone": "Asia/Taipei",
+    "database_path": "stock_monitor.db"
+  }
+}
